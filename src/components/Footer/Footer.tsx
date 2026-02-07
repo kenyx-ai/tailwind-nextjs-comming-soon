@@ -16,9 +16,13 @@ function Footer() {
                 key={index}
                 className="px-2 capitalize border-1  hover:border-b-white"
               >
-                <a target="_blank" className="" href={social.link}>
-                  {social.icon}
-                </a>
+                {social.link ? (
+                  <a target="_blank" className="" href={social.link}>
+                    {social.icon}
+                  </a>
+                ) : (
+                  <span>{social.icon}</span>
+                )}
               </li>
             ))}
           </ul>
