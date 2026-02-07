@@ -26,7 +26,7 @@ export default function RootLayout({
       </Head>
       <body className={ `${inter.className} bg-gray-200	min-h-screen dark:bg-[#0d1117] `}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>          
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>          
           <main className='main'>{children}</main>
         </ThemeProvider>          
       </body>
